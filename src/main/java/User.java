@@ -84,7 +84,7 @@ public class User {
     }
 
     private long createIdUser() {
-        return Long.MIN_VALUE +(long) (Math.random() * Long.MIN_VALUE);
+        return Long.MIN_VALUE + (long) (Math.random() * Long.MIN_VALUE) ;
     }
 
     public long getId() {
@@ -93,9 +93,7 @@ public class User {
 
     @Override
     public String toString() {
-        return  id +
-                " , " + lastName +
-                " , " + firstName +
+        return  id +" , " + lastName +" , " + firstName +
                 " , " + ssn +
                 " , " + test1 +
                 " , " + test2 +

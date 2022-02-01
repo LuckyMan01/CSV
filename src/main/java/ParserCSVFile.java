@@ -56,7 +56,7 @@ public class ParserCSVFile {
         List<User> arrayUser = new ArrayList<>();
         for (int i = 1; i < arrayLine.size(); i++) {
             User user = new User();
-            String[] fieldUser = arrayLine.get(i).split(SEPARATOR);
+            String[] fieldUser = arrayLine.get(i).replace('\"','\'').split(SEPARATOR);
             user.setLastName(fieldUser[Fields.LAST_NAME.getIndex()]);
             user.setFirstName(fieldUser[Fields.FIRST_NAME.getIndex()]);
             user.setSsn(fieldUser[Fields.SSN.getIndex()]);
