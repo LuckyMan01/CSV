@@ -27,7 +27,7 @@ public class ParserCSVFile {
     }
 
 
-    public List<Map<String, String>> mapUserFields() {
+    private List<Map<String, String>> mapUserFields() {
         List<Map<String, String>> array = new ArrayList<>();
         for (int i = 0; i < arrayLine.size(); i++) {
             Map<String, String> fieldsUser = new HashMap<>();
@@ -52,7 +52,7 @@ public class ParserCSVFile {
         return array;
     }
 
-    public List<User> fillingUserField() {
+    private List<User> fillingUserField() {
         List<User> arrayUser = new ArrayList<>();
         for (int i = 1; i < arrayLine.size(); i++) {
             User user = new User();

@@ -9,7 +9,12 @@ public class User {
     private double test4;
     private double finalTest;
     private String grade;
-    private final long id = createIdUser();
+    private long id ;
+
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getLastName() {
         return lastName;
@@ -83,9 +88,7 @@ public class User {
         this.grade = grade;
     }
 
-    private long createIdUser() {
-        return Long.MIN_VALUE + (long) (Math.random() * Long.MIN_VALUE) ;
-    }
+
 
     public long getId() {
         return id;
