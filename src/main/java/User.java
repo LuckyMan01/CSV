@@ -9,12 +9,8 @@ public class User {
     private double test4;
     private double finalTest;
     private String grade;
-    private long id ;
 
 
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getLastName() {
         return lastName;
@@ -89,14 +85,9 @@ public class User {
     }
 
 
-
-    public long getId() {
-        return id;
-    }
-
     @Override
     public String toString() {
-        return  id +" , " + lastName +" , " + firstName +
+        return lastName +" , " + firstName +
                 " , " + ssn +
                 " , " + test1 +
                 " , " + test2 +

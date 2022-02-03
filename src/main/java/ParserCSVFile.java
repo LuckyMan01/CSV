@@ -52,7 +52,7 @@ public class ParserCSVFile {
         return array;
     }
 
-    private List<User> fillingUserField() {
+    public List<User> fillingUserField() {
         List<User> arrayUser = new ArrayList<>();
         for (int i = 1; i < arrayLine.size(); i++) {
             User user = new User();
